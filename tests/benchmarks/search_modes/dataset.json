@@ -1,0 +1,2955 @@
+{
+ "seed": 1729,
+ "core": {
+  "facts": [
+   {
+    "id": "f00000",
+    "kind": "member",
+    "text": "Filip Dvorak belongs to team Falcon.",
+    "entities": [
+     "e:person:Filip Dvorak",
+     "e:team:Falcon"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00001",
+    "kind": "member",
+    "text": "Edda Popescu belongs to team Falcon.",
+    "entities": [
+     "e:person:Edda Popescu",
+     "e:team:Falcon"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00002",
+    "kind": "member",
+    "text": "Tariq Brandt belongs to team Falcon.",
+    "entities": [
+     "e:person:Tariq Brandt",
+     "e:team:Falcon"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00003",
+    "kind": "member",
+    "text": "Lena Tanaka belongs to team Heron.",
+    "entities": [
+     "e:person:Lena Tanaka",
+     "e:team:Heron"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00004",
+    "kind": "member",
+    "text": "Dana Yilmaz belongs to team Heron.",
+    "entities": [
+     "e:person:Dana Yilmaz",
+     "e:team:Heron"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00005",
+    "kind": "member",
+    "text": "Lina Keller belongs to team Heron.",
+    "entities": [
+     "e:person:Lina Keller",
+     "e:team:Heron"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00006",
+    "kind": "member",
+    "text": "Ilse Lund belongs to team Otter.",
+    "entities": [
+     "e:person:Ilse Lund",
+     "e:team:Otter"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00007",
+    "kind": "member",
+    "text": "Freya Haddad belongs to team Otter.",
+    "entities": [
+     "e:person:Freya Haddad",
+     "e:team:Otter"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00008",
+    "kind": "member",
+    "text": "Milo Lund belongs to team Otter.",
+    "entities": [
+     "e:person:Milo Lund",
+     "e:team:Otter"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00009",
+    "kind": "member",
+    "text": "Lena Sorensen belongs to team Lynx.",
+    "entities": [
+     "e:person:Lena Sorensen",
+     "e:team:Lynx"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00010",
+    "kind": "member",
+    "text": "Anton Ivanova belongs to team Lynx.",
+    "entities": [
+     "e:person:Anton Ivanova",
+     "e:team:Lynx"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00011",
+    "kind": "member",
+    "text": "Milo Berg belongs to team Lynx.",
+    "entities": [
+     "e:person:Milo Berg",
+     "e:team:Lynx"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00012",
+    "kind": "member",
+    "text": "Petra Popescu belongs to team Badger.",
+    "entities": [
+     "e:person:Petra Popescu",
+     "e:team:Badger"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00013",
+    "kind": "member",
+    "text": "Greta Meyer belongs to team Badger.",
+    "entities": [
+     "e:person:Greta Meyer",
+     "e:team:Badger"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00014",
+    "kind": "member",
+    "text": "Anton Szabo belongs to team Badger.",
+    "entities": [
+     "e:person:Anton Szabo",
+     "e:team:Badger"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00015",
+    "kind": "member",
+    "text": "Dana Weber belongs to team Kestrel.",
+    "entities": [
+     "e:person:Dana Weber",
+     "e:team:Kestrel"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00016",
+    "kind": "member",
+    "text": "Cyra Sato belongs to team Kestrel.",
+    "entities": [
+     "e:person:Cyra Sato",
+     "e:team:Kestrel"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00017",
+    "kind": "member",
+    "text": "Anton Weber belongs to team Kestrel.",
+    "entities": [
+     "e:person:Anton Weber",
+     "e:team:Kestrel"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00018",
+    "kind": "lead",
+    "text": "Team Falcon is led by Elif Hansen.",
+    "entities": [
+     "e:team:Falcon",
+     "e:person:Elif Hansen"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00019",
+    "kind": "lead",
+    "text": "Team Heron is led by Ines Moreau.",
+    "entities": [
+     "e:team:Heron",
+     "e:person:Ines Moreau"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00020",
+    "kind": "lead",
+    "text": "Team Otter is led by Greta Nilsen.",
+    "entities": [
+     "e:team:Otter",
+     "e:person:Greta Nilsen"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00021",
+    "kind": "lead",
+    "text": "Team Lynx is led by Viktor Holm.",
+    "entities": [
+     "e:team:Lynx",
+     "e:person:Viktor Holm"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00022",
+    "kind": "lead",
+    "text": "Team Badger is led by Luca Lund.",
+    "entities": [
+     "e:team:Badger",
+     "e:person:Luca Lund"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00023",
+    "kind": "lead",
+    "text": "Team Kestrel is led by Elif Lindqvist.",
+    "entities": [
+     "e:team:Kestrel",
+     "e:person:Elif Lindqvist"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00024",
+    "kind": "oper",
+    "text": "Elif Hansen runs the press M-2.",
+    "entities": [
+     "e:person:Elif Hansen",
+     "e:machine:press M-2"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00025",
+    "kind": "oper",
+    "text": "Ines Moreau runs the welder N-7.",
+    "entities": [
+     "e:person:Ines Moreau",
+     "e:machine:welder N-7"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00026",
+    "kind": "oper",
+    "text": "Greta Nilsen runs the press C-6.",
+    "entities": [
+     "e:person:Greta Nilsen",
+     "e:machine:press C-6"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00027",
+    "kind": "oper",
+    "text": "Viktor Holm runs the kiln P-7.",
+    "entities": [
+     "e:person:Viktor Holm",
+     "e:machine:kiln P-7"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00028",
+    "kind": "oper",
+    "text": "Luca Lund runs the kiln M-5.",
+    "entities": [
+     "e:person:Luca Lund",
+     "e:machine:kiln M-5"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00029",
+    "kind": "oper",
+    "text": "Elif Lindqvist runs the kiln Z-7.",
+    "entities": [
+     "e:person:Elif Lindqvist",
+     "e:machine:kiln Z-7"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00030",
+    "kind": "oper",
+    "text": "Yara Haddad runs the loom F-1.",
+    "entities": [
+     "e:person:Yara Haddad",
+     "e:machine:loom F-1"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00031",
+    "kind": "oper",
+    "text": "Mia Rossi runs the press S-5.",
+    "entities": [
+     "e:person:Mia Rossi",
+     "e:machine:press S-5"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00032",
+    "kind": "mloc",
+    "text": "The press M-2 sits in the Harbor depot.",
+    "entities": [
+     "e:machine:press M-2",
+     "e:location:Harbor"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00033",
+    "kind": "mloc",
+    "text": "The welder N-7 sits in the Meadow depot.",
+    "entities": [
+     "e:machine:welder N-7",
+     "e:location:Meadow"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00034",
+    "kind": "mloc",
+    "text": "The press C-6 sits in the Quarry depot.",
+    "entities": [
+     "e:machine:press C-6",
+     "e:location:Quarry"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00035",
+    "kind": "mloc",
+    "text": "The kiln P-7 sits in the Summit depot.",
+    "entities": [
+     "e:machine:kiln P-7",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00036",
+    "kind": "mloc",
+    "text": "The kiln M-5 sits in the Harbor depot.",
+    "entities": [
+     "e:machine:kiln M-5",
+     "e:location:Harbor"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00037",
+    "kind": "mloc",
+    "text": "The kiln Z-7 sits in the Quarry depot.",
+    "entities": [
+     "e:machine:kiln Z-7",
+     "e:location:Quarry"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00038",
+    "kind": "mloc",
+    "text": "The loom F-1 sits in the Meadow depot.",
+    "entities": [
+     "e:machine:loom F-1",
+     "e:location:Meadow"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00039",
+    "kind": "mloc",
+    "text": "The press S-5 sits in the Quarry depot.",
+    "entities": [
+     "e:machine:press S-5",
+     "e:location:Quarry"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00040",
+    "kind": "mloc",
+    "text": "The loom D-9 sits in the Harbor depot.",
+    "entities": [
+     "e:machine:loom D-9",
+     "e:location:Harbor"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00041",
+    "kind": "mloc",
+    "text": "The press R-5 sits in the Summit depot.",
+    "entities": [
+     "e:machine:press R-5",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00042",
+    "kind": "mloc",
+    "text": "The lathe Z-9 sits in the Harbor depot.",
+    "entities": [
+     "e:machine:lathe Z-9",
+     "e:location:Harbor"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00043",
+    "kind": "mloc",
+    "text": "The loom S-7 sits in the Summit depot.",
+    "entities": [
+     "e:machine:loom S-7",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00044",
+    "kind": "ploc",
+    "text": "Project Orion is hosted at the Summit site.",
+    "entities": [
+     "e:project:Orion",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00045",
+    "kind": "ploc",
+    "text": "Project Vega is hosted at the Harbor site.",
+    "entities": [
+     "e:project:Vega",
+     "e:location:Harbor"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00046",
+    "kind": "ploc",
+    "text": "Project Lyra is hosted at the Summit site.",
+    "entities": [
+     "e:project:Lyra",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00047",
+    "kind": "ploc",
+    "text": "Project Draco is hosted at the Meadow site.",
+    "entities": [
+     "e:project:Draco",
+     "e:location:Meadow"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00048",
+    "kind": "ploc",
+    "text": "Project Hydra is hosted at the Summit site.",
+    "entities": [
+     "e:project:Hydra",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00049",
+    "kind": "ploc",
+    "text": "Project Cetus is hosted at the Harbor site.",
+    "entities": [
+     "e:project:Cetus",
+     "e:location:Harbor"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00050",
+    "kind": "ploc",
+    "text": "Project Pavo is hosted at the Quarry site.",
+    "entities": [
+     "e:project:Pavo",
+     "e:location:Quarry"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00051",
+    "kind": "ploc",
+    "text": "Project Indus is hosted at the Summit site.",
+    "entities": [
+     "e:project:Indus",
+     "e:location:Summit"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00052",
+    "kind": "owns",
+    "text": "Team Heron owns project Orion.",
+    "entities": [
+     "e:team:Heron",
+     "e:project:Orion"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00053",
+    "kind": "owns",
+    "text": "Team Badger owns project Vega.",
+    "entities": [
+     "e:team:Badger",
+     "e:project:Vega"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00054",
+    "kind": "owns",
+    "text": "Team Kestrel owns project Lyra.",
+    "entities": [
+     "e:team:Kestrel",
+     "e:project:Lyra"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00055",
+    "kind": "owns",
+    "text": "Team Kestrel owns project Draco.",
+    "entities": [
+     "e:team:Kestrel",
+     "e:project:Draco"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00056",
+    "kind": "owns",
+    "text": "Team Kestrel owns project Hydra.",
+    "entities": [
+     "e:team:Kestrel",
+     "e:project:Hydra"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00057",
+    "kind": "owns",
+    "text": "Team Lynx owns project Cetus.",
+    "entities": [
+     "e:team:Lynx",
+     "e:project:Cetus"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00058",
+    "kind": "owns",
+    "text": "Team Heron owns project Pavo.",
+    "entities": [
+     "e:team:Heron",
+     "e:project:Pavo"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00059",
+    "kind": "owns",
+    "text": "Team Otter owns project Indus.",
+    "entities": [
+     "e:team:Otter",
+     "e:project:Indus"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00060",
+    "kind": "attr",
+    "text": "Project Orion budget is 55k EUR.",
+    "entities": [
+     "e:project:Orion"
+    ],
+    "status": "outdated",
+    "value": "55k EUR"
+   },
+   {
+    "id": "f00061",
+    "kind": "attr",
+    "text": "Project Orion budget is 95k EUR.",
+    "entities": [
+     "e:project:Orion"
+    ],
+    "status": "outdated",
+    "value": "95k EUR"
+   },
+   {
+    "id": "f00062",
+    "kind": "attr",
+    "text": "Project Orion budget is 70k EUR.",
+    "entities": [
+     "e:project:Orion"
+    ],
+    "status": "active",
+    "value": "70k EUR"
+   },
+   {
+    "id": "f00063",
+    "kind": "attr",
+    "text": "Project Vega deadline is January.",
+    "entities": [
+     "e:project:Vega"
+    ],
+    "status": "outdated",
+    "value": "January"
+   },
+   {
+    "id": "f00064",
+    "kind": "attr",
+    "text": "Project Vega deadline is May.",
+    "entities": [
+     "e:project:Vega"
+    ],
+    "status": "outdated",
+    "value": "May"
+   },
+   {
+    "id": "f00065",
+    "kind": "attr",
+    "text": "Project Vega deadline is November.",
+    "entities": [
+     "e:project:Vega"
+    ],
+    "status": "outdated",
+    "value": "November"
+   },
+   {
+    "id": "f00066",
+    "kind": "attr",
+    "text": "Project Vega deadline is July.",
+    "entities": [
+     "e:project:Vega"
+    ],
+    "status": "active",
+    "value": "July"
+   },
+   {
+    "id": "f00067",
+    "kind": "attr",
+    "text": "Project Lyra status is audit.",
+    "entities": [
+     "e:project:Lyra"
+    ],
+    "status": "outdated",
+    "value": "audit"
+   },
+   {
+    "id": "f00068",
+    "kind": "attr",
+    "text": "Project Lyra status is paused.",
+    "entities": [
+     "e:project:Lyra"
+    ],
+    "status": "outdated",
+    "value": "paused"
+   },
+   {
+    "id": "f00069",
+    "kind": "attr",
+    "text": "Project Lyra status is prototype.",
+    "entities": [
+     "e:project:Lyra"
+    ],
+    "status": "active",
+    "value": "prototype"
+   },
+   {
+    "id": "f00070",
+    "kind": "attr",
+    "text": "Project Draco budget is 55k EUR.",
+    "entities": [
+     "e:project:Draco"
+    ],
+    "status": "outdated",
+    "value": "55k EUR"
+   },
+   {
+    "id": "f00071",
+    "kind": "attr",
+    "text": "Project Draco budget is 70k EUR.",
+    "entities": [
+     "e:project:Draco"
+    ],
+    "status": "outdated",
+    "value": "70k EUR"
+   },
+   {
+    "id": "f00072",
+    "kind": "attr",
+    "text": "Project Draco budget is 85k EUR.",
+    "entities": [
+     "e:project:Draco"
+    ],
+    "status": "outdated",
+    "value": "85k EUR"
+   },
+   {
+    "id": "f00073",
+    "kind": "attr",
+    "text": "Project Draco budget is 95k EUR.",
+    "entities": [
+     "e:project:Draco"
+    ],
+    "status": "active",
+    "value": "95k EUR"
+   },
+   {
+    "id": "f00074",
+    "kind": "attr",
+    "text": "Project Hydra deadline is March.",
+    "entities": [
+     "e:project:Hydra"
+    ],
+    "status": "outdated",
+    "value": "March"
+   },
+   {
+    "id": "f00075",
+    "kind": "attr",
+    "text": "Project Hydra deadline is July.",
+    "entities": [
+     "e:project:Hydra"
+    ],
+    "status": "outdated",
+    "value": "July"
+   },
+   {
+    "id": "f00076",
+    "kind": "attr",
+    "text": "Project Hydra deadline is November.",
+    "entities": [
+     "e:project:Hydra"
+    ],
+    "status": "active",
+    "value": "November"
+   },
+   {
+    "id": "f00077",
+    "kind": "attr",
+    "text": "Project Cetus status is paused.",
+    "entities": [
+     "e:project:Cetus"
+    ],
+    "status": "outdated",
+    "value": "paused"
+   },
+   {
+    "id": "f00078",
+    "kind": "attr",
+    "text": "Project Cetus status is pilot.",
+    "entities": [
+     "e:project:Cetus"
+    ],
+    "status": "outdated",
+    "value": "pilot"
+   },
+   {
+    "id": "f00079",
+    "kind": "attr",
+    "text": "Project Cetus status is planning.",
+    "entities": [
+     "e:project:Cetus"
+    ],
+    "status": "outdated",
+    "value": "planning"
+   },
+   {
+    "id": "f00080",
+    "kind": "attr",
+    "text": "Project Cetus status is audit.",
+    "entities": [
+     "e:project:Cetus"
+    ],
+    "status": "active",
+    "value": "audit"
+   },
+   {
+    "id": "f00081",
+    "kind": "born",
+    "text": "Filip Dvorak was born in Porto.",
+    "entities": [
+     "e:person:Filip Dvorak"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00082",
+    "kind": "born",
+    "text": "Edda Popescu was born in Varna.",
+    "entities": [
+     "e:person:Edda Popescu"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00083",
+    "kind": "born",
+    "text": "Tariq Brandt was born in Ghent.",
+    "entities": [
+     "e:person:Tariq Brandt"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00084",
+    "kind": "born",
+    "text": "Lena Tanaka was born in Basel.",
+    "entities": [
+     "e:person:Lena Tanaka"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00085",
+    "kind": "born",
+    "text": "Dana Yilmaz was born in Split.",
+    "entities": [
+     "e:person:Dana Yilmaz"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00086",
+    "kind": "born",
+    "text": "Lina Keller was born in Graz.",
+    "entities": [
+     "e:person:Lina Keller"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00087",
+    "kind": "born",
+    "text": "Ilse Lund was born in Graz.",
+    "entities": [
+     "e:person:Ilse Lund"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00088",
+    "kind": "born",
+    "text": "Freya Haddad was born in Malmo.",
+    "entities": [
+     "e:person:Freya Haddad"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00089",
+    "kind": "born",
+    "text": "Milo Lund was born in Cork.",
+    "entities": [
+     "e:person:Milo Lund"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00090",
+    "kind": "born",
+    "text": "Lena Sorensen was born in Pecs.",
+    "entities": [
+     "e:person:Lena Sorensen"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00091",
+    "kind": "born",
+    "text": "Anton Ivanova was born in Turku.",
+    "entities": [
+     "e:person:Anton Ivanova"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00092",
+    "kind": "born",
+    "text": "Milo Berg was born in Bergen.",
+    "entities": [
+     "e:person:Milo Berg"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00093",
+    "kind": "born",
+    "text": "Petra Popescu was born in Riga.",
+    "entities": [
+     "e:person:Petra Popescu"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00094",
+    "kind": "born",
+    "text": "Greta Meyer was born in Nantes.",
+    "entities": [
+     "e:person:Greta Meyer"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00095",
+    "kind": "born",
+    "text": "Anton Szabo was born in Ghent.",
+    "entities": [
+     "e:person:Anton Szabo"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00096",
+    "kind": "born",
+    "text": "Dana Weber was born in Riga.",
+    "entities": [
+     "e:person:Dana Weber"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00097",
+    "kind": "born",
+    "text": "Cyra Sato was born in Leeds.",
+    "entities": [
+     "e:person:Cyra Sato"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00098",
+    "kind": "born",
+    "text": "Anton Weber was born in Pecs.",
+    "entities": [
+     "e:person:Anton Weber"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00099",
+    "kind": "born",
+    "text": "Elif Hansen was born in Varna.",
+    "entities": [
+     "e:person:Elif Hansen"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00100",
+    "kind": "born",
+    "text": "Ines Moreau was born in Cork.",
+    "entities": [
+     "e:person:Ines Moreau"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00101",
+    "kind": "born",
+    "text": "Greta Nilsen was born in Brno.",
+    "entities": [
+     "e:person:Greta Nilsen"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00102",
+    "kind": "born",
+    "text": "Viktor Holm was born in Tallinn.",
+    "entities": [
+     "e:person:Viktor Holm"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00103",
+    "kind": "born",
+    "text": "Luca Lund was born in Bergen.",
+    "entities": [
+     "e:person:Luca Lund"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00104",
+    "kind": "born",
+    "text": "Elif Lindqvist was born in Riga.",
+    "entities": [
+     "e:person:Elif Lindqvist"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00105",
+    "kind": "born",
+    "text": "Yara Haddad was born in Porto.",
+    "entities": [
+     "e:person:Yara Haddad"
+    ],
+    "status": "active"
+   },
+   {
+    "id": "f00106",
+    "kind": "born",
+    "text": "Mia Rossi was born in Tallinn.",
+    "entities": [
+     "e:person:Mia Rossi"
+    ],
+    "status": "active"
+   }
+  ],
+  "entities": [
+   {
+    "id": "e:person:Filip Dvorak",
+    "kind": "person",
+    "text": "Filip Dvorak (person)"
+   },
+   {
+    "id": "e:team:Falcon",
+    "kind": "team",
+    "text": "Falcon (team)"
+   },
+   {
+    "id": "e:person:Edda Popescu",
+    "kind": "person",
+    "text": "Edda Popescu (person)"
+   },
+   {
+    "id": "e:person:Tariq Brandt",
+    "kind": "person",
+    "text": "Tariq Brandt (person)"
+   },
+   {
+    "id": "e:person:Lena Tanaka",
+    "kind": "person",
+    "text": "Lena Tanaka (person)"
+   },
+   {
+    "id": "e:team:Heron",
+    "kind": "team",
+    "text": "Heron (team)"
+   },
+   {
+    "id": "e:person:Dana Yilmaz",
+    "kind": "person",
+    "text": "Dana Yilmaz (person)"
+   },
+   {
+    "id": "e:person:Lina Keller",
+    "kind": "person",
+    "text": "Lina Keller (person)"
+   },
+   {
+    "id": "e:person:Ilse Lund",
+    "kind": "person",
+    "text": "Ilse Lund (person)"
+   },
+   {
+    "id": "e:team:Otter",
+    "kind": "team",
+    "text": "Otter (team)"
+   },
+   {
+    "id": "e:person:Freya Haddad",
+    "kind": "person",
+    "text": "Freya Haddad (person)"
+   },
+   {
+    "id": "e:person:Milo Lund",
+    "kind": "person",
+    "text": "Milo Lund (person)"
+   },
+   {
+    "id": "e:person:Lena Sorensen",
+    "kind": "person",
+    "text": "Lena Sorensen (person)"
+   },
+   {
+    "id": "e:team:Lynx",
+    "kind": "team",
+    "text": "Lynx (team)"
+   },
+   {
+    "id": "e:person:Anton Ivanova",
+    "kind": "person",
+    "text": "Anton Ivanova (person)"
+   },
+   {
+    "id": "e:person:Milo Berg",
+    "kind": "person",
+    "text": "Milo Berg (person)"
+   },
+   {
+    "id": "e:person:Petra Popescu",
+    "kind": "person",
+    "text": "Petra Popescu (person)"
+   },
+   {
+    "id": "e:team:Badger",
+    "kind": "team",
+    "text": "Badger (team)"
+   },
+   {
+    "id": "e:person:Greta Meyer",
+    "kind": "person",
+    "text": "Greta Meyer (person)"
+   },
+   {
+    "id": "e:person:Anton Szabo",
+    "kind": "person",
+    "text": "Anton Szabo (person)"
+   },
+   {
+    "id": "e:person:Dana Weber",
+    "kind": "person",
+    "text": "Dana Weber (person)"
+   },
+   {
+    "id": "e:team:Kestrel",
+    "kind": "team",
+    "text": "Kestrel (team)"
+   },
+   {
+    "id": "e:person:Cyra Sato",
+    "kind": "person",
+    "text": "Cyra Sato (person)"
+   },
+   {
+    "id": "e:person:Anton Weber",
+    "kind": "person",
+    "text": "Anton Weber (person)"
+   },
+   {
+    "id": "e:person:Elif Hansen",
+    "kind": "person",
+    "text": "Elif Hansen (person)"
+   },
+   {
+    "id": "e:person:Ines Moreau",
+    "kind": "person",
+    "text": "Ines Moreau (person)"
+   },
+   {
+    "id": "e:person:Greta Nilsen",
+    "kind": "person",
+    "text": "Greta Nilsen (person)"
+   },
+   {
+    "id": "e:person:Viktor Holm",
+    "kind": "person",
+    "text": "Viktor Holm (person)"
+   },
+   {
+    "id": "e:person:Luca Lund",
+    "kind": "person",
+    "text": "Luca Lund (person)"
+   },
+   {
+    "id": "e:person:Elif Lindqvist",
+    "kind": "person",
+    "text": "Elif Lindqvist (person)"
+   },
+   {
+    "id": "e:machine:press M-2",
+    "kind": "machine",
+    "text": "press M-2 (machine)"
+   },
+   {
+    "id": "e:machine:welder N-7",
+    "kind": "machine",
+    "text": "welder N-7 (machine)"
+   },
+   {
+    "id": "e:machine:press C-6",
+    "kind": "machine",
+    "text": "press C-6 (machine)"
+   },
+   {
+    "id": "e:machine:kiln P-7",
+    "kind": "machine",
+    "text": "kiln P-7 (machine)"
+   },
+   {
+    "id": "e:machine:kiln M-5",
+    "kind": "machine",
+    "text": "kiln M-5 (machine)"
+   },
+   {
+    "id": "e:machine:kiln Z-7",
+    "kind": "machine",
+    "text": "kiln Z-7 (machine)"
+   },
+   {
+    "id": "e:person:Yara Haddad",
+    "kind": "person",
+    "text": "Yara Haddad (person)"
+   },
+   {
+    "id": "e:machine:loom F-1",
+    "kind": "machine",
+    "text": "loom F-1 (machine)"
+   },
+   {
+    "id": "e:person:Mia Rossi",
+    "kind": "person",
+    "text": "Mia Rossi (person)"
+   },
+   {
+    "id": "e:machine:press S-5",
+    "kind": "machine",
+    "text": "press S-5 (machine)"
+   },
+   {
+    "id": "e:location:Harbor",
+    "kind": "location",
+    "text": "Harbor (location)"
+   },
+   {
+    "id": "e:location:Meadow",
+    "kind": "location",
+    "text": "Meadow (location)"
+   },
+   {
+    "id": "e:location:Quarry",
+    "kind": "location",
+    "text": "Quarry (location)"
+   },
+   {
+    "id": "e:location:Summit",
+    "kind": "location",
+    "text": "Summit (location)"
+   },
+   {
+    "id": "e:machine:loom D-9",
+    "kind": "machine",
+    "text": "loom D-9 (machine)"
+   },
+   {
+    "id": "e:machine:press R-5",
+    "kind": "machine",
+    "text": "press R-5 (machine)"
+   },
+   {
+    "id": "e:machine:lathe Z-9",
+    "kind": "machine",
+    "text": "lathe Z-9 (machine)"
+   },
+   {
+    "id": "e:machine:loom S-7",
+    "kind": "machine",
+    "text": "loom S-7 (machine)"
+   },
+   {
+    "id": "e:project:Orion",
+    "kind": "project",
+    "text": "Orion (project)"
+   },
+   {
+    "id": "e:project:Vega",
+    "kind": "project",
+    "text": "Vega (project)"
+   },
+   {
+    "id": "e:project:Lyra",
+    "kind": "project",
+    "text": "Lyra (project)"
+   },
+   {
+    "id": "e:project:Draco",
+    "kind": "project",
+    "text": "Draco (project)"
+   },
+   {
+    "id": "e:project:Hydra",
+    "kind": "project",
+    "text": "Hydra (project)"
+   },
+   {
+    "id": "e:project:Cetus",
+    "kind": "project",
+    "text": "Cetus (project)"
+   },
+   {
+    "id": "e:project:Pavo",
+    "kind": "project",
+    "text": "Pavo (project)"
+   },
+   {
+    "id": "e:project:Indus",
+    "kind": "project",
+    "text": "Indus (project)"
+   }
+  ],
+  "edges": [
+   {
+    "from": "f00000",
+    "to": "e:person:Filip Dvorak",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00000",
+    "to": "e:team:Falcon",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Filip Dvorak",
+    "to": "e:team:Falcon",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00001",
+    "to": "e:person:Edda Popescu",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00001",
+    "to": "e:team:Falcon",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Edda Popescu",
+    "to": "e:team:Falcon",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00002",
+    "to": "e:person:Tariq Brandt",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00002",
+    "to": "e:team:Falcon",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Tariq Brandt",
+    "to": "e:team:Falcon",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00003",
+    "to": "e:person:Lena Tanaka",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00003",
+    "to": "e:team:Heron",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Lena Tanaka",
+    "to": "e:team:Heron",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00004",
+    "to": "e:person:Dana Yilmaz",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00004",
+    "to": "e:team:Heron",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Dana Yilmaz",
+    "to": "e:team:Heron",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00005",
+    "to": "e:person:Lina Keller",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00005",
+    "to": "e:team:Heron",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Lina Keller",
+    "to": "e:team:Heron",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00006",
+    "to": "e:person:Ilse Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00006",
+    "to": "e:team:Otter",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Ilse Lund",
+    "to": "e:team:Otter",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00007",
+    "to": "e:person:Freya Haddad",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00007",
+    "to": "e:team:Otter",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Freya Haddad",
+    "to": "e:team:Otter",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00008",
+    "to": "e:person:Milo Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00008",
+    "to": "e:team:Otter",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Milo Lund",
+    "to": "e:team:Otter",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00009",
+    "to": "e:person:Lena Sorensen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00009",
+    "to": "e:team:Lynx",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Lena Sorensen",
+    "to": "e:team:Lynx",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00010",
+    "to": "e:person:Anton Ivanova",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00010",
+    "to": "e:team:Lynx",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Anton Ivanova",
+    "to": "e:team:Lynx",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00011",
+    "to": "e:person:Milo Berg",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00011",
+    "to": "e:team:Lynx",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Milo Berg",
+    "to": "e:team:Lynx",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00012",
+    "to": "e:person:Petra Popescu",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00012",
+    "to": "e:team:Badger",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Petra Popescu",
+    "to": "e:team:Badger",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00013",
+    "to": "e:person:Greta Meyer",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00013",
+    "to": "e:team:Badger",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Greta Meyer",
+    "to": "e:team:Badger",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00014",
+    "to": "e:person:Anton Szabo",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00014",
+    "to": "e:team:Badger",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Anton Szabo",
+    "to": "e:team:Badger",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00015",
+    "to": "e:person:Dana Weber",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00015",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Dana Weber",
+    "to": "e:team:Kestrel",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00016",
+    "to": "e:person:Cyra Sato",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00016",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Cyra Sato",
+    "to": "e:team:Kestrel",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00017",
+    "to": "e:person:Anton Weber",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00017",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Anton Weber",
+    "to": "e:team:Kestrel",
+    "type": "MEMBER_OF"
+   },
+   {
+    "from": "f00018",
+    "to": "e:team:Falcon",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00018",
+    "to": "e:person:Elif Hansen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Elif Hansen",
+    "to": "e:team:Falcon",
+    "type": "LEADS"
+   },
+   {
+    "from": "f00019",
+    "to": "e:team:Heron",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00019",
+    "to": "e:person:Ines Moreau",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Ines Moreau",
+    "to": "e:team:Heron",
+    "type": "LEADS"
+   },
+   {
+    "from": "f00020",
+    "to": "e:team:Otter",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00020",
+    "to": "e:person:Greta Nilsen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Greta Nilsen",
+    "to": "e:team:Otter",
+    "type": "LEADS"
+   },
+   {
+    "from": "f00021",
+    "to": "e:team:Lynx",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00021",
+    "to": "e:person:Viktor Holm",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Viktor Holm",
+    "to": "e:team:Lynx",
+    "type": "LEADS"
+   },
+   {
+    "from": "f00022",
+    "to": "e:team:Badger",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00022",
+    "to": "e:person:Luca Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Luca Lund",
+    "to": "e:team:Badger",
+    "type": "LEADS"
+   },
+   {
+    "from": "f00023",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00023",
+    "to": "e:person:Elif Lindqvist",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Elif Lindqvist",
+    "to": "e:team:Kestrel",
+    "type": "LEADS"
+   },
+   {
+    "from": "f00024",
+    "to": "e:person:Elif Hansen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00024",
+    "to": "e:machine:press M-2",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Elif Hansen",
+    "to": "e:machine:press M-2",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00025",
+    "to": "e:person:Ines Moreau",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00025",
+    "to": "e:machine:welder N-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Ines Moreau",
+    "to": "e:machine:welder N-7",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00026",
+    "to": "e:person:Greta Nilsen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00026",
+    "to": "e:machine:press C-6",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Greta Nilsen",
+    "to": "e:machine:press C-6",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00027",
+    "to": "e:person:Viktor Holm",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00027",
+    "to": "e:machine:kiln P-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Viktor Holm",
+    "to": "e:machine:kiln P-7",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00028",
+    "to": "e:person:Luca Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00028",
+    "to": "e:machine:kiln M-5",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Luca Lund",
+    "to": "e:machine:kiln M-5",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00029",
+    "to": "e:person:Elif Lindqvist",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00029",
+    "to": "e:machine:kiln Z-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Elif Lindqvist",
+    "to": "e:machine:kiln Z-7",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00030",
+    "to": "e:person:Yara Haddad",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00030",
+    "to": "e:machine:loom F-1",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Yara Haddad",
+    "to": "e:machine:loom F-1",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00031",
+    "to": "e:person:Mia Rossi",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00031",
+    "to": "e:machine:press S-5",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:person:Mia Rossi",
+    "to": "e:machine:press S-5",
+    "type": "OPERATES"
+   },
+   {
+    "from": "f00032",
+    "to": "e:machine:press M-2",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00032",
+    "to": "e:location:Harbor",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:press M-2",
+    "to": "e:location:Harbor",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00033",
+    "to": "e:machine:welder N-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00033",
+    "to": "e:location:Meadow",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:welder N-7",
+    "to": "e:location:Meadow",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00034",
+    "to": "e:machine:press C-6",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00034",
+    "to": "e:location:Quarry",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:press C-6",
+    "to": "e:location:Quarry",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00035",
+    "to": "e:machine:kiln P-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00035",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:kiln P-7",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00036",
+    "to": "e:machine:kiln M-5",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00036",
+    "to": "e:location:Harbor",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:kiln M-5",
+    "to": "e:location:Harbor",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00037",
+    "to": "e:machine:kiln Z-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00037",
+    "to": "e:location:Quarry",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:kiln Z-7",
+    "to": "e:location:Quarry",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00038",
+    "to": "e:machine:loom F-1",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00038",
+    "to": "e:location:Meadow",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:loom F-1",
+    "to": "e:location:Meadow",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00039",
+    "to": "e:machine:press S-5",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00039",
+    "to": "e:location:Quarry",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:press S-5",
+    "to": "e:location:Quarry",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00040",
+    "to": "e:machine:loom D-9",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00040",
+    "to": "e:location:Harbor",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:loom D-9",
+    "to": "e:location:Harbor",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00041",
+    "to": "e:machine:press R-5",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00041",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:press R-5",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00042",
+    "to": "e:machine:lathe Z-9",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00042",
+    "to": "e:location:Harbor",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:lathe Z-9",
+    "to": "e:location:Harbor",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00043",
+    "to": "e:machine:loom S-7",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00043",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:machine:loom S-7",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00044",
+    "to": "e:project:Orion",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00044",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Orion",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00045",
+    "to": "e:project:Vega",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00045",
+    "to": "e:location:Harbor",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Vega",
+    "to": "e:location:Harbor",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00046",
+    "to": "e:project:Lyra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00046",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Lyra",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00047",
+    "to": "e:project:Draco",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00047",
+    "to": "e:location:Meadow",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Draco",
+    "to": "e:location:Meadow",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00048",
+    "to": "e:project:Hydra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00048",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Hydra",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00049",
+    "to": "e:project:Cetus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00049",
+    "to": "e:location:Harbor",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Cetus",
+    "to": "e:location:Harbor",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00050",
+    "to": "e:project:Pavo",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00050",
+    "to": "e:location:Quarry",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Pavo",
+    "to": "e:location:Quarry",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00051",
+    "to": "e:project:Indus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00051",
+    "to": "e:location:Summit",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:project:Indus",
+    "to": "e:location:Summit",
+    "type": "LOCATED_IN"
+   },
+   {
+    "from": "f00052",
+    "to": "e:team:Heron",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00052",
+    "to": "e:project:Orion",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Heron",
+    "to": "e:project:Orion",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00053",
+    "to": "e:team:Badger",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00053",
+    "to": "e:project:Vega",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Badger",
+    "to": "e:project:Vega",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00054",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00054",
+    "to": "e:project:Lyra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Kestrel",
+    "to": "e:project:Lyra",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00055",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00055",
+    "to": "e:project:Draco",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Kestrel",
+    "to": "e:project:Draco",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00056",
+    "to": "e:team:Kestrel",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00056",
+    "to": "e:project:Hydra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Kestrel",
+    "to": "e:project:Hydra",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00057",
+    "to": "e:team:Lynx",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00057",
+    "to": "e:project:Cetus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Lynx",
+    "to": "e:project:Cetus",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00058",
+    "to": "e:team:Heron",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00058",
+    "to": "e:project:Pavo",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Heron",
+    "to": "e:project:Pavo",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00059",
+    "to": "e:team:Otter",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00059",
+    "to": "e:project:Indus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "e:team:Otter",
+    "to": "e:project:Indus",
+    "type": "OWNS"
+   },
+   {
+    "from": "f00060",
+    "to": "e:project:Orion",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00061",
+    "to": "e:project:Orion",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00061",
+    "to": "f00060",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00062",
+    "to": "e:project:Orion",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00062",
+    "to": "f00061",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00063",
+    "to": "e:project:Vega",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00064",
+    "to": "e:project:Vega",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00064",
+    "to": "f00063",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00065",
+    "to": "e:project:Vega",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00065",
+    "to": "f00064",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00066",
+    "to": "e:project:Vega",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00066",
+    "to": "f00065",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00067",
+    "to": "e:project:Lyra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00068",
+    "to": "e:project:Lyra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00068",
+    "to": "f00067",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00069",
+    "to": "e:project:Lyra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00069",
+    "to": "f00068",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00070",
+    "to": "e:project:Draco",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00071",
+    "to": "e:project:Draco",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00071",
+    "to": "f00070",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00072",
+    "to": "e:project:Draco",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00072",
+    "to": "f00071",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00073",
+    "to": "e:project:Draco",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00073",
+    "to": "f00072",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00074",
+    "to": "e:project:Hydra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00075",
+    "to": "e:project:Hydra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00075",
+    "to": "f00074",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00076",
+    "to": "e:project:Hydra",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00076",
+    "to": "f00075",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00077",
+    "to": "e:project:Cetus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00078",
+    "to": "e:project:Cetus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00078",
+    "to": "f00077",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00079",
+    "to": "e:project:Cetus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00079",
+    "to": "f00078",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00080",
+    "to": "e:project:Cetus",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00080",
+    "to": "f00079",
+    "type": "FOLLOWS_FROM"
+   },
+   {
+    "from": "f00081",
+    "to": "e:person:Filip Dvorak",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00082",
+    "to": "e:person:Edda Popescu",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00083",
+    "to": "e:person:Tariq Brandt",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00084",
+    "to": "e:person:Lena Tanaka",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00085",
+    "to": "e:person:Dana Yilmaz",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00086",
+    "to": "e:person:Lina Keller",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00087",
+    "to": "e:person:Ilse Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00088",
+    "to": "e:person:Freya Haddad",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00089",
+    "to": "e:person:Milo Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00090",
+    "to": "e:person:Lena Sorensen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00091",
+    "to": "e:person:Anton Ivanova",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00092",
+    "to": "e:person:Milo Berg",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00093",
+    "to": "e:person:Petra Popescu",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00094",
+    "to": "e:person:Greta Meyer",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00095",
+    "to": "e:person:Anton Szabo",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00096",
+    "to": "e:person:Dana Weber",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00097",
+    "to": "e:person:Cyra Sato",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00098",
+    "to": "e:person:Anton Weber",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00099",
+    "to": "e:person:Elif Hansen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00100",
+    "to": "e:person:Ines Moreau",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00101",
+    "to": "e:person:Greta Nilsen",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00102",
+    "to": "e:person:Viktor Holm",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00103",
+    "to": "e:person:Luca Lund",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00104",
+    "to": "e:person:Elif Lindqvist",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00105",
+    "to": "e:person:Yara Haddad",
+    "type": "MENTIONS"
+   },
+   {
+    "from": "f00106",
+    "to": "e:person:Mia Rossi",
+    "type": "MENTIONS"
+   }
+  ]
+ },
+ "questions": [
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Anton Ivanova's crew work with?",
+   "gold": [
+    "f00010",
+    "f00021",
+    "f00027"
+   ],
+   "answer_fact": "f00027",
+   "id": "q00"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Anton Szabo's crew work with?",
+   "gold": [
+    "f00014",
+    "f00022",
+    "f00028"
+   ],
+   "answer_fact": "f00028",
+   "id": "q01"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Anton Weber's crew work with?",
+   "gold": [
+    "f00017",
+    "f00023",
+    "f00029"
+   ],
+   "answer_fact": "f00029",
+   "id": "q02"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Cyra Sato's crew work with?",
+   "gold": [
+    "f00016",
+    "f00023",
+    "f00029"
+   ],
+   "answer_fact": "f00029",
+   "id": "q03"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Dana Weber's crew work with?",
+   "gold": [
+    "f00015",
+    "f00023",
+    "f00029"
+   ],
+   "answer_fact": "f00029",
+   "id": "q04"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Dana Yilmaz's crew work with?",
+   "gold": [
+    "f00004",
+    "f00019",
+    "f00025"
+   ],
+   "answer_fact": "f00025",
+   "id": "q05"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Edda Popescu's crew work with?",
+   "gold": [
+    "f00001",
+    "f00018",
+    "f00024"
+   ],
+   "answer_fact": "f00024",
+   "id": "q06"
+  },
+  {
+   "type": "chain3",
+   "q": "Which equipment does the person heading Filip Dvorak's crew work with?",
+   "gold": [
+    "f00000",
+    "f00018",
+    "f00024"
+   ],
+   "answer_fact": "f00024",
+   "id": "q07"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Elif Hansen handles kept?",
+   "gold": [
+    "f00024",
+    "f00032"
+   ],
+   "answer_fact": "f00032",
+   "id": "q08"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Elif Lindqvist handles kept?",
+   "gold": [
+    "f00029",
+    "f00037"
+   ],
+   "answer_fact": "f00037",
+   "id": "q09"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Greta Nilsen handles kept?",
+   "gold": [
+    "f00026",
+    "f00034"
+   ],
+   "answer_fact": "f00034",
+   "id": "q10"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Ines Moreau handles kept?",
+   "gold": [
+    "f00025",
+    "f00033"
+   ],
+   "answer_fact": "f00033",
+   "id": "q11"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Luca Lund handles kept?",
+   "gold": [
+    "f00028",
+    "f00036"
+   ],
+   "answer_fact": "f00036",
+   "id": "q12"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Mia Rossi handles kept?",
+   "gold": [
+    "f00031",
+    "f00039"
+   ],
+   "answer_fact": "f00039",
+   "id": "q13"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Viktor Holm handles kept?",
+   "gold": [
+    "f00027",
+    "f00035"
+   ],
+   "answer_fact": "f00035",
+   "id": "q14"
+  },
+  {
+   "type": "chain2",
+   "q": "In which facility is the gear that Yara Haddad handles kept?",
+   "gold": [
+    "f00030",
+    "f00038"
+   ],
+   "answer_fact": "f00038",
+   "id": "q15"
+  },
+  {
+   "type": "aggregate",
+   "q": "List everyone who belongs to team Falcon.",
+   "gold": [
+    "f00001",
+    "f00000",
+    "f00002"
+   ],
+   "id": "q16"
+  },
+  {
+   "type": "aggregate",
+   "q": "List everyone who belongs to team Heron.",
+   "gold": [
+    "f00004",
+    "f00003",
+    "f00005"
+   ],
+   "id": "q17"
+  },
+  {
+   "type": "aggregate",
+   "q": "List everyone who belongs to team Otter.",
+   "gold": [
+    "f00007",
+    "f00006",
+    "f00008"
+   ],
+   "id": "q18"
+  },
+  {
+   "type": "aggregate",
+   "q": "List everyone who belongs to team Lynx.",
+   "gold": [
+    "f00010",
+    "f00009",
+    "f00011"
+   ],
+   "id": "q19"
+  },
+  {
+   "type": "aggregate",
+   "q": "List everyone who belongs to team Badger.",
+   "gold": [
+    "f00014",
+    "f00013",
+    "f00012"
+   ],
+   "id": "q20"
+  },
+  {
+   "type": "aggregate",
+   "q": "List everyone who belongs to team Kestrel.",
+   "gold": [
+    "f00017",
+    "f00016",
+    "f00015"
+   ],
+   "id": "q21"
+  },
+  {
+   "type": "aggregate",
+   "q": "Name all projects hosted at the Harbor site.",
+   "gold": [
+    "f00045",
+    "f00049"
+   ],
+   "id": "q22"
+  },
+  {
+   "type": "aggregate",
+   "q": "Name all projects hosted at the Summit site.",
+   "gold": [
+    "f00044",
+    "f00046",
+    "f00048",
+    "f00051"
+   ],
+   "id": "q23"
+  },
+  {
+   "type": "current",
+   "q": "What is the current budget of project Orion?",
+   "gold": [
+    "f00062"
+   ],
+   "stale": [
+    "f00060",
+    "f00061"
+   ],
+   "id": "q24"
+  },
+  {
+   "type": "current",
+   "q": "What is the current deadline of project Vega?",
+   "gold": [
+    "f00066"
+   ],
+   "stale": [
+    "f00063",
+    "f00064",
+    "f00065"
+   ],
+   "id": "q25"
+  },
+  {
+   "type": "current",
+   "q": "What is the current status of project Lyra?",
+   "gold": [
+    "f00069"
+   ],
+   "stale": [
+    "f00067",
+    "f00068"
+   ],
+   "id": "q26"
+  },
+  {
+   "type": "current",
+   "q": "What is the current budget of project Draco?",
+   "gold": [
+    "f00073"
+   ],
+   "stale": [
+    "f00070",
+    "f00071",
+    "f00072"
+   ],
+   "id": "q27"
+  },
+  {
+   "type": "current",
+   "q": "What is the current deadline of project Hydra?",
+   "gold": [
+    "f00076"
+   ],
+   "stale": [
+    "f00074",
+    "f00075"
+   ],
+   "id": "q28"
+  },
+  {
+   "type": "current",
+   "q": "What is the current status of project Cetus?",
+   "gold": [
+    "f00080"
+   ],
+   "stale": [
+    "f00077",
+    "f00078",
+    "f00079"
+   ],
+   "id": "q29"
+  },
+  {
+   "type": "control",
+   "q": "Where was Anton Ivanova born?",
+   "gold": [
+    "f00091"
+   ],
+   "id": "q30"
+  },
+  {
+   "type": "control",
+   "q": "Where was Anton Szabo born?",
+   "gold": [
+    "f00095"
+   ],
+   "id": "q31"
+  },
+  {
+   "type": "control",
+   "q": "Where was Anton Weber born?",
+   "gold": [
+    "f00098"
+   ],
+   "id": "q32"
+  },
+  {
+   "type": "control",
+   "q": "Where was Cyra Sato born?",
+   "gold": [
+    "f00097"
+   ],
+   "id": "q33"
+  },
+  {
+   "type": "control",
+   "q": "Where was Dana Weber born?",
+   "gold": [
+    "f00096"
+   ],
+   "id": "q34"
+  },
+  {
+   "type": "control",
+   "q": "Where was Dana Yilmaz born?",
+   "gold": [
+    "f00085"
+   ],
+   "id": "q35"
+  },
+  {
+   "type": "control",
+   "q": "Where was Edda Popescu born?",
+   "gold": [
+    "f00082"
+   ],
+   "id": "q36"
+  },
+  {
+   "type": "control",
+   "q": "Where was Elif Hansen born?",
+   "gold": [
+    "f00099"
+   ],
+   "id": "q37"
+  },
+  {
+   "type": "control",
+   "q": "Where was Elif Lindqvist born?",
+   "gold": [
+    "f00104"
+   ],
+   "id": "q38"
+  },
+  {
+   "type": "control",
+   "q": "Where was Filip Dvorak born?",
+   "gold": [
+    "f00081"
+   ],
+   "id": "q39"
+  }
+ ],
+ "noise_summary": {
+  "facts": 10000,
+  "entities": 4911,
+  "edges": 22658
+ }
+}

@@ -484,7 +484,11 @@ class GraphMemoryMCP(BaseGraphMemoryMCP):
                 "or post_filter (global ANN then filter, best for small graphs); "
                 "defaults to server SEARCH_TYPE when omitted. "
                 "Always includes suggested_next / do_not guidance. "
-                "Set compact=true for snippets under a token budget (expand via get_node / get_context)."
+                "Set compact=true for snippets under a token budget (expand via get_node / get_context). "
+                "search_mode: embedding (default, as above), exact (phrase/substring; "
+                "quote phrases to require each), fuzzy (typo-tolerant keywords), "
+                "bm25 (keyword ranking), or hybrid (RRF of hybrid_modes, default "
+                "embedding+bm25). rerank=true reorders top hits with a local cross-encoder."
             ),
         )
         def search(
@@ -499,6 +503,9 @@ class GraphMemoryMCP(BaseGraphMemoryMCP):
             search_type: str | None = None,
             metadata_filter: dict | None = None,
             compact: bool = False,
+            search_mode: str | None = None,
+            hybrid_modes: list[str] | None = None,
+            rerank: bool | None = None,
         ) -> dict:
             return mcp_handlers_search.search(
                 db,
@@ -514,6 +521,9 @@ class GraphMemoryMCP(BaseGraphMemoryMCP):
                 search_type=search_type,
                 metadata_filter=metadata_filter,
                 compact=compact,
+                search_mode=search_mode,
+                hybrid_modes=hybrid_modes,
+                rerank=rerank,
             )
 
         @mcp.tool(

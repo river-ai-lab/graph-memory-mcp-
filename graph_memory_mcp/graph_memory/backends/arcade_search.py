@@ -50,6 +50,7 @@ def _attribute_where(
     exclude_node_id: Optional[str],
     now_ms: int,
     include_ttl: bool = False,
+    require_embedding: bool = True,
 ) -> tuple[str, Dict[str, Any]]:
     """SQL predicates for status, expiry, metadata, and an excluded uid.
 
@@ -58,7 +59,9 @@ def _attribute_where(
     ``include_outdated`` drops the expiry predicate.
     """
     validate_metadata_filter(metadata_filter)
-    parts: list[str] = ["embedding IS NOT NULL"]
+    parts: list[str] = [
+        "embedding IS NOT NULL" if require_embedding else "text IS NOT NULL"
+    ]
     params: Dict[str, Any] = {}
     if status:
         parts.append("status = :status")
@@ -249,3 +252,47 @@ def _neighbor_rows(
         if len(out) >= k:
             break
     return out
+
+
+def text_rows(
+    store: Any,
+    *,
+    node_type: str,
+    owner_id: str,
+    include_outdated: bool = False,
+    status: Optional[str] = None,
+    metadata_filter: Optional[Dict[str, Any]] = None,
+    include_ttl: bool = False,
+) -> List[List[Any]]:
+    """Owner candidate rows for lexical search, in the vector row shape (distance 0)."""
+    if node_type not in ("Fact", "Entity"):
+        raise ValueError(f"Text search is not supported for {node_type}")
+    with store.owner_scope(owner_id):
+        owner = store.owner_literal(owner_id)
+        where, params = _attribute_where(
+            node_type,
+            include_outdated=include_outdated,
+            status=status,
+            metadata_filter=metadata_filter,
+            exclude_node_id=None,
+            now_ms=int(time.time() * 1000),
+            include_ttl=include_ttl,
+            require_embedding=False,
+        )
+        rows = store.query(
+            f"SELECT uid, text, status, created_at, metadata_str FROM {node_type} "
+            f"WHERE owner_id = '{owner}' AND {where}",
+            params,
+        )
+    return [
+        [
+            r.get("uid"),
+            node_type,
+            r.get("text"),
+            r.get("status"),
+            r.get("created_at"),
+            r.get("metadata_str"),
+            0.0,
+        ]
+        for r in rows
+    ]

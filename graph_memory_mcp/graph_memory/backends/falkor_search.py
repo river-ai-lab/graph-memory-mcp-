@@ -245,6 +245,46 @@ def ann_rows(
     return store.rows(query, params)
 
 
+def text_rows(
+    store: Any,
+    *,
+    node_type: str,
+    owner_id: str,
+    include_outdated: bool = False,
+    status: Optional[str] = None,
+    metadata_filter: Optional[Dict[str, Any]] = None,
+    include_ttl: bool = False,
+) -> List[List[Any]]:
+    """Owner-scoped candidate rows for lexical search (same filters, no vector).
+
+    Rows have the vector row shape with distance 0.0 in the last column.
+    """
+    property_filters, params = _property_filter_clauses(
+        node_type,
+        include_outdated=include_outdated,
+        status=status,
+        include_ttl=include_ttl,
+    )
+    meta_clauses, meta_params = build_metadata_filter_clauses(metadata_filter)
+    params.update(meta_params)
+    params["owner_id"] = owner_id
+    query = f"""
+    MATCH (node:{node_type})
+    WHERE node.owner_id = $owner_id
+      AND node.text IS NOT NULL
+    {property_filters}{meta_clauses}
+    RETURN
+        node.uid as node_id,
+        '{node_type}' as node_type,
+        node.text as text,
+        node.status as status,
+        node.created_at as created_at,
+        node.metadata_str as metadata_str,
+        0.0 as score
+    """
+    return store.rows(query, params)
+
+
 def fact_embedding(store: Any, fact_id: str, owner_id: str) -> tuple[bool, Any]:
     """Return (found, embedding). Embedding may be empty when the fact exists."""
     rows = store.rows(

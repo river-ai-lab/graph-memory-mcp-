@@ -19,6 +19,8 @@ class CacheManager:
     def __init__(self, config):
         """Initialize cache manager with configuration."""
         self.config = config
+        # Bumped on every write; in-process lexical indexes key on it.
+        self.generation = 0
 
         # LRU cache for embeddings (text -> vector)
         self.embeddings = (
@@ -62,6 +64,7 @@ class CacheManager:
 
     def invalidate_search(self):
         """Invalidate all search caches (called on mutations)."""
+        self.generation += 1
         if self.search is not None:
             self.search.clear()
 

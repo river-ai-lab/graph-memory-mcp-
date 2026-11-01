@@ -165,6 +165,25 @@ class MCPServerConfig(BaseSettings):
         default=14.0,
         validation_alias="SEARCH_RECENCY_HALF_LIFE_DAYS",
     )
+    default_search_mode: str = Field(
+        default="embedding",
+        validation_alias="SEARCH_MODE",
+        description="Default search_mode: embedding | exact | fuzzy | bm25 | hybrid",
+    )
+    search_reranker_enabled: bool = Field(
+        default=False,
+        validation_alias="SEARCH_RERANKER",
+        description="Rerank search results with a local ONNX cross-encoder by default",
+    )
+    search_reranker_model: str = Field(
+        default="Xenova/ms-marco-MiniLM-L-6-v2",
+        validation_alias="SEARCH_RERANKER_MODEL",
+    )
+    search_rerank_top_k: int = Field(
+        default=30,
+        validation_alias="SEARCH_RERANK_TOP_K",
+        description="How many top results the cross-encoder reorders",
+    )
     # Time-aware recall: score ×= (1-w) + w * 0.5^(age_days/half_life) and
     # ×= (1-w) + w * usage. Weights 0 disable the corresponding factor.
     recall_recency_weight: float = Field(

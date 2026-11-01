@@ -8,6 +8,13 @@ from graph_memory_mcp.config import MCPServerConfig
 from graph_memory_mcp.graph_memory.cache import hash_query
 from graph_memory_mcp.graph_memory.compact_recall import decorate_search_response
 from graph_memory_mcp.graph_memory.database import FalkorDBClient
+from graph_memory_mcp.graph_memory.lexical_search import (
+    LEXICAL_MODES,
+    cached_index,
+    normalize_hybrid_modes,
+    normalize_search_mode,
+    rrf_fuse,
+)
 from graph_memory_mcp.graph_memory.owner_scoped_search import (
     SearchType,
     build_metadata_filter_clauses,
@@ -205,6 +212,121 @@ def _search_nodes_by_type(
     )
 
 
+def _embedding_results(
+    db: FalkorDBClient,
+    config: MCPServerConfig,
+    *,
+    query: str,
+    owner_id: str,
+    node_types: List[str],
+    candidate_limit: int,
+    similarity_threshold: float,
+    search_type: SearchType,
+    include_outdated: bool,
+    status: Optional[str],
+    metadata_filter: Optional[Dict],
+    include_ttl: bool,
+) -> Optional[List[Dict]]:
+    """Vector search plus the identifier/recency blend. None when no vector."""
+    db.ensure_search_indexes_if_missing(owner_id=owner_id)
+    embedding = db.get_embedding(query, kind="query")
+    if not embedding:
+        return None
+    max_distance = 1.0 - similarity_threshold
+    results: List[Dict] = []
+    for node_type in node_types:
+        results.extend(
+            _search_nodes_by_type(
+                db,
+                config,
+                node_type,
+                embedding,
+                candidate_limit,
+                max_distance,
+                owner_id,
+                search_type=search_type,
+                include_outdated=include_outdated,
+                status=status,
+                metadata_filter=metadata_filter,
+                include_ttl=include_ttl,
+            )
+        )
+    return rerank_results(
+        results,
+        query=query,
+        now_ms=int(time.time() * 1000),
+        lexical_weight=config.search_lexical_weight,
+        recency_weight=config.search_recency_weight,
+        half_life_days=config.search_recency_half_life_days,
+    )
+
+
+def _lexical_results(
+    db: FalkorDBClient,
+    *,
+    query: str,
+    mode: str,
+    owner_id: str,
+    node_types: List[str],
+    candidate_limit: int,
+    include_outdated: bool,
+    status: Optional[str],
+    metadata_filter: Optional[Dict],
+    include_ttl: bool,
+) -> List[Dict]:
+    """exact / fuzzy / bm25 over the owner's filtered rows (see lexical_search)."""
+    assert mode in LEXICAL_MODES
+    results: List[Dict] = []
+    for node_type in node_types:
+        key = (
+            owner_id,
+            node_type,
+            include_outdated,
+            status,
+            include_ttl,
+            repr(sorted((metadata_filter or {}).items())),
+        )
+
+        def _load(node_type: str = node_type) -> list:
+            return db.text_rows(
+                node_type=node_type,
+                owner_id=owner_id,
+                include_outdated=include_outdated,
+                status=status,
+                metadata_filter=metadata_filter,
+                include_ttl=include_ttl,
+            )
+
+        index = cached_index(db, key, _load)
+        for row, score in index.search(query, mode, candidate_limit):
+            item = _rows_to_search_results([row])[0]
+            item.pop("similarity", None)
+            item["score"] = round(float(score), 6)
+            item["match"] = mode
+            results.append(item)
+    results.sort(key=lambda r: (-r["score"], r["node_id"]))
+    return results[:candidate_limit]
+
+
+def _fuse(per_mode: Dict[str, List[Dict]], limit: int) -> List[Dict]:
+    """RRF over the per-mode rankings. Keeps the first-seen row per node."""
+    scores = rrf_fuse([[r["node_id"] for r in rows] for rows in per_mode.values()])
+    by_id: Dict[str, Dict] = {}
+    hits: Dict[str, List[str]] = {}
+    for one, rows in per_mode.items():
+        for r in rows:
+            by_id.setdefault(r["node_id"], dict(r))
+            hits.setdefault(r["node_id"], []).append(one)
+    fused = []
+    for node_id, score in scores.items():
+        item = by_id[node_id]
+        item["score"] = round(score, 6)
+        item["match"] = "+".join(hits[node_id])
+        fused.append(item)
+    fused.sort(key=lambda r: (-r["score"], r["node_id"]))
+    return fused[:limit]
+
+
 @mcp_handler
 def search(
     db: FalkorDBClient,
@@ -221,12 +343,22 @@ def search(
     metadata_filter: Optional[Dict] = None,
     compact: bool = False,
     include_ttl: bool = False,
+    search_mode: Optional[str] = None,
+    hybrid_modes: Optional[List[str]] = None,
+    rerank: Optional[bool] = None,
 ) -> Dict:
-    """Search for nodes by semantic similarity."""
+    """Search nodes. search_mode: embedding (default) | exact | fuzzy | bm25 | hybrid."""
     owner_id = normalize_owner_id(owner_id)
     try:
         resolved_search_type = normalize_search_type(
             search_type if search_type is not None else config.default_search_type
+        )
+        mode = normalize_search_mode(
+            search_mode if search_mode is not None else config.default_search_mode
+        )
+        fused_modes = normalize_hybrid_modes(hybrid_modes) if mode == "hybrid" else ()
+        use_reranker = (
+            config.search_reranker_enabled if rerank is None else bool(rerank)
         )
         # Validate filter keys early (raises ValueError → validation error).
         build_metadata_filter_clauses(metadata_filter)
@@ -244,6 +376,9 @@ def search(
         search_type=resolved_search_type,
         metadata_filter=metadata_filter,
         include_ttl=include_ttl,
+        search_mode=mode,
+        hybrid_modes=list(fused_modes),
+        rerank=use_reranker,
     )
 
     def _decorate(payload: Dict) -> Dict:
@@ -278,44 +413,62 @@ def search(
         if not node_types:
             node_types = ["Fact", "Entity"]
 
-    db.ensure_search_indexes_if_missing(owner_id=owner_id)
-
-    embedding = db.get_embedding(query, kind="query")
-    if not embedding:
-        return error_response(
-            "Embedding service returned no vector; search was not run",
-            code="memory_embedding_error",
-        )
-
-    max_distance = 1.0 - similarity_threshold
+    filters = dict(
+        include_outdated=include_outdated,
+        status=status,
+        metadata_filter=metadata_filter,
+        include_ttl=include_ttl,
+    )
     candidate_limit = min(config.max_search_limit, max(limit * 5, limit))
-    results: List[Dict] = []
+    if use_reranker:
+        candidate_limit = max(candidate_limit, min(config.search_rerank_top_k, 1000))
+    modes = fused_modes if mode == "hybrid" else (mode,)
+    per_mode: Dict[str, List[Dict]] = {}
+    for one in modes:
+        if one == "embedding":
+            ranked = _embedding_results(
+                db,
+                config,
+                query=query,
+                owner_id=owner_id,
+                node_types=node_types,
+                candidate_limit=candidate_limit,
+                similarity_threshold=similarity_threshold,
+                search_type=resolved_search_type,
+                **filters,
+            )
+            if ranked is None:
+                return error_response(
+                    "Embedding service returned no vector; search was not run",
+                    code="memory_embedding_error",
+                )
+        else:
+            ranked = _lexical_results(
+                db,
+                query=query,
+                mode=one,
+                owner_id=owner_id,
+                node_types=node_types,
+                candidate_limit=candidate_limit,
+                **filters,
+            )
+        per_mode[one] = ranked
 
-    for node_type in node_types:
-        type_results = _search_nodes_by_type(
-            db,
-            config,
-            node_type,
-            embedding,
-            candidate_limit,
-            max_distance,
-            owner_id,
-            search_type=resolved_search_type,
-            include_outdated=include_outdated,
-            status=status,
-            metadata_filter=metadata_filter,
-            include_ttl=include_ttl,
+    if mode == "hybrid":
+        results = _fuse(per_mode, candidate_limit)
+    else:
+        results = per_mode[mode]
+
+    if use_reranker and results:
+        from graph_memory_mcp.graph_memory.reranker import rerank as ce_rerank
+
+        results = ce_rerank(
+            query,
+            results,
+            model_name=config.search_reranker_model,
+            top_k=max(limit, config.search_rerank_top_k),
         )
-        results.extend(type_results)
-
-    results = rerank_results(
-        results,
-        query=query,
-        now_ms=int(time.time() * 1000),
-        lexical_weight=config.search_lexical_weight,
-        recency_weight=config.search_recency_weight,
-        half_life_days=config.search_recency_half_life_days,
-    )[:limit]
+    results = results[:limit]
 
     facts = [n for n in results if n.get("node_type") == "Fact"]
     entities = [n for n in results if n.get("node_type") == "Entity"]

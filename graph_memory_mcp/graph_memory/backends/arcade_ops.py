@@ -149,6 +149,11 @@ class ArcadeOps:
     def similarity_rows(self, **kwargs: Any) -> list:
         return self.ann_rows(**kwargs)
 
+    def text_rows(self, **kwargs: Any) -> list:
+        from graph_memory_mcp.graph_memory.backends.arcade_search import text_rows
+
+        return text_rows(self, **kwargs)
+
     def fact_embedding(self, fact_id: str, owner_id: str) -> tuple[bool, Any]:
         _label, record = self._find(fact_id, owner_id, types=("Fact",))
         if record is None:

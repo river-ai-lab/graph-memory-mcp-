@@ -448,6 +448,11 @@ class FalkorDBClient(FalkorOps):
 
         return ann_rows(self, **kwargs)
 
+    def text_rows(self, **kwargs: Any) -> List[List[Any]]:
+        from graph_memory_mcp.graph_memory.backends.falkor_search import text_rows
+
+        return text_rows(self, **kwargs)
+
     def fact_embedding(self, fact_id: str, owner_id: str) -> tuple[bool, Any]:
         from graph_memory_mcp.graph_memory.backends.falkor_search import fact_embedding
 
